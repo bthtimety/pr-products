@@ -6,7 +6,7 @@
 #include <QDialog>
 
 namespace Ui {
-class dialogDelete;
+    class dialogDelete;
 }
 
 class dialogDelete : public QDialog

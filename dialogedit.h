@@ -6,7 +6,7 @@
 #include <QDialog>
 
 namespace Ui {
-class dialogEdit;
+    class dialogEdit;
 }
 
 class dialogEdit : public QDialog

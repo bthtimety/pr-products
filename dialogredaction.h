@@ -9,7 +9,7 @@
 #include <QMessageBox>
 
 namespace Ui {
-class dialogRedaction;
+    class dialogRedaction;
 }
 
 class dialogRedaction : public QDialog

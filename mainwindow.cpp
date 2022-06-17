@@ -21,6 +21,7 @@
 #include <QLibraryInfo>
 #include <QDebug>
 #include <QSortFilterProxyModel>
+#include <QTextCodec>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -31,6 +32,9 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     setWindowTitle(tr("Concrete products data base"));
     ui->tableView->setModel(model);
+
+    QTextCodec* codec = QTextCodec::codecForName("UTF-8");
+    QTextCodec::setCodecForLocale(codec);
 
     //подключение контектного меню
     ui->tableView->setContextMenuPolicy(Qt::CustomContextMenu);
