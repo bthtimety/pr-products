@@ -401,7 +401,6 @@ void MainWindow::searcing()
     }
 }
 
-
 void MainWindow::on_actionAdd_new_window_triggered()
 {
     MainWindow * k = new MainWindow;
